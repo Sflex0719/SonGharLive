@@ -2,7 +2,7 @@ name: Update Playlist
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Har 1 hour pe run hoga
+    - cron: '0 * * * *'  # 1 hour
   workflow_dispatch:  # Manual Also
 
 jobs:
