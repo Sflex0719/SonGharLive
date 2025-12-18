@@ -183,7 +183,7 @@ def create_json(channels):
     
     # Create final JSON structure
     json_data = {
-        "StreamFlex_Auto_updated_at": datetime.utcnow().isoformat() + "Z",
+        "StreamFlex_A_updated_at": datetime.utcnow().isoformat() + "Z",
         "StreamFlex_SL_total_channels": len(channels),
         "total_categories": len(categories),
         "categories": {}
