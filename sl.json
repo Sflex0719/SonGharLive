@@ -1,0 +1,370 @@
+{
+  "StreamFlex_Auto_updated_at": "2025-12-18T17:57:14.065055Z",
+  "StreamFlex_SL_total_channels": 21,
+  "total_categories": 5,
+  "categories": {
+    "Entertainment": {
+      "count": 3,
+      "channels": [
+        {
+          "name": "SET HD",
+          "tvg_id": "1000009246",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/4_244.png",
+          "group": "Entertainment",
+          "url": "https://dishmt.slivcdn.com/hls/live/2011671/SETHD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        },
+        {
+          "name": "Sony SAB HD",
+          "tvg_id": "1000009248",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/33_247.png",
+          "group": "Entertainment",
+          "url": "https://dishmt.slivcdn.com/hls/live/2011749/SABHD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        },
+        {
+          "name": "Sony Pal",
+          "tvg_id": "1000009273",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/6_257.png",
+          "group": "Entertainment",
+          "url": "https://dishmt.slivcdn.com/hls/live/2011741/SonyPalSD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        }
+      ]
+    },
+    "Kids": {
+      "count": 1,
+      "channels": [
+        {
+          "name": "Sony Yay",
+          "tvg_id": "1000001971",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/12_259.png",
+          "group": "Kids",
+          "url": "https://dishmt.slivcdn.com/hls/live/2011746/SonyYaySD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        }
+      ]
+    },
+    "Movies": {
+      "count": 5,
+      "channels": [
+        {
+          "name": "Sony MAX HD",
+          "tvg_id": "1000009247",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/35_249.png",
+          "group": "Movies",
+          "url": "https://dishmt.slivcdn.com/hls/live/2011670/SonyMaxhd/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        },
+        {
+          "name": "Sony MAX",
+          "tvg_id": "1000009249",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/1_248.png",
+          "group": "Movies",
+          "url": "https://dishmt.slivcdn.com/hls/live/2011745/SonyMaxSD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        },
+        {
+          "name": "Sony MAX 2",
+          "tvg_id": "1000009253",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/2_250.png",
+          "group": "Movies",
+          "url": "https://dishmt.slivcdn.com/hls/live/2011908/MAX2/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        },
+        {
+          "name": "Sony WAH",
+          "tvg_id": "1000044878",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/10_258.png",
+          "group": "Movies",
+          "url": "https://dishmt.slivcdn.com/hls/live/2011906/SonyWah/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        },
+        {
+          "name": "Sony PIX HD",
+          "tvg_id": "1000009258",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/34_252.png",
+          "group": "Movies",
+          "url": "https://dishmt.slivcdn.com/hls/live/2011748/PIXHD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        }
+      ]
+    },
+    "Regional": {
+      "count": 2,
+      "channels": [
+        {
+          "name": "Sony Marathi",
+          "tvg_id": "1000009259",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/36_260.png",
+          "group": "Regional",
+          "url": "https://dishmt.slivcdn.com/hls/live/2011740/SonyMarathi/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        },
+        {
+          "name": "Sony Aath",
+          "tvg_id": "1000009255",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/9_255.png",
+          "group": "Regional",
+          "url": "https://dishmt.slivcdn.com/hls/live/2011641/SonyAathSD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        }
+      ]
+    },
+    "Sports": {
+      "count": 10,
+      "channels": [
+        {
+          "name": "Sony Sports Ten 1 HD",
+          "tvg_id": "1000009276",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/21_266.png",
+          "group": "Sports",
+          "url": "https://dishmt.slivcdn.com/hls/live/2011747/TEN1HD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        },
+        {
+          "name": "Sony Sports Ten 1",
+          "tvg_id": "1000009280",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/20_262.png",
+          "group": "Sports",
+          "url": "https://dishmt.slivcdn.com/hls/live/2011739/TEN1SD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        },
+        {
+          "name": "Sony Sports Ten 2",
+          "tvg_id": "1000009279",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/22_261.png",
+          "group": "Sports",
+          "url": "https://dishmt.slivcdn.com/hls/live/2020590/TEN2SD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        },
+        {
+          "name": "Sony Sports Ten 3",
+          "tvg_id": "1000009283",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/24_274.png",
+          "group": "Sports",
+          "url": "https://dishmt.slivcdn.com/hls/live/2020592/TEN3SD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        },
+        {
+          "name": "Sony Sports Ten 4",
+          "tvg_id": "1000119187",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/38_275.png",
+          "group": "Sports",
+          "url": "https://dishmt.slivcdn.com/hls/live/2020437/ten4sd/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        },
+        {
+          "name": "Sony Sports Ten 5",
+          "tvg_id": "1000009281",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/18_265.png",
+          "group": "Sports",
+          "url": "https://dishmt.slivcdn.com/hls/live/2020594/SONYSIXSD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        },
+        {
+          "name": "Sony Sports Ten 2 HD",
+          "tvg_id": "1000009277",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/23_267.png",
+          "group": "Sports",
+          "url": "https://dishmt.slivcdn.com/hls/live/2020434/TEN2HD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        },
+        {
+          "name": "Sony Sports Ten 3 HD",
+          "tvg_id": "1000009278",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/25_276.png",
+          "group": "Sports",
+          "url": "https://dishmt.slivcdn.com/hls/live/2020591/TEN3HD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        },
+        {
+          "name": "Sony Sports Ten 4 HD",
+          "tvg_id": "1000119186",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/39_277.png",
+          "group": "Sports",
+          "url": "https://dishmt.slivcdn.com/hls/live/2020589/ten4hd/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        },
+        {
+          "name": "Sony Sports Ten 4 HD",
+          "tvg_id": "1000009275",
+          "tvg_name": "",
+          "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/39_277.png",
+          "group": "Sports",
+          "url": "https://dishmt.slivcdn.com/hls/live/2020589/ten4hd/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+        }
+      ]
+    }
+  },
+  "all_channels": [
+    {
+      "name": "SET HD",
+      "tvg_id": "1000009246",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/4_244.png",
+      "group": "Entertainment",
+      "url": "https://dishmt.slivcdn.com/hls/live/2011671/SETHD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony SAB HD",
+      "tvg_id": "1000009248",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/33_247.png",
+      "group": "Entertainment",
+      "url": "https://dishmt.slivcdn.com/hls/live/2011749/SABHD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony Marathi",
+      "tvg_id": "1000009259",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/36_260.png",
+      "group": "Regional",
+      "url": "https://dishmt.slivcdn.com/hls/live/2011740/SonyMarathi/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony Pal",
+      "tvg_id": "1000009273",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/6_257.png",
+      "group": "Entertainment",
+      "url": "https://dishmt.slivcdn.com/hls/live/2011741/SonyPalSD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony Aath",
+      "tvg_id": "1000009255",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/9_255.png",
+      "group": "Regional",
+      "url": "https://dishmt.slivcdn.com/hls/live/2011641/SonyAathSD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony Yay",
+      "tvg_id": "1000001971",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/12_259.png",
+      "group": "Kids",
+      "url": "https://dishmt.slivcdn.com/hls/live/2011746/SonyYaySD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony MAX HD",
+      "tvg_id": "1000009247",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/35_249.png",
+      "group": "Movies",
+      "url": "https://dishmt.slivcdn.com/hls/live/2011670/SonyMaxhd/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony MAX",
+      "tvg_id": "1000009249",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/1_248.png",
+      "group": "Movies",
+      "url": "https://dishmt.slivcdn.com/hls/live/2011745/SonyMaxSD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony MAX 2",
+      "tvg_id": "1000009253",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/2_250.png",
+      "group": "Movies",
+      "url": "https://dishmt.slivcdn.com/hls/live/2011908/MAX2/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony WAH",
+      "tvg_id": "1000044878",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/10_258.png",
+      "group": "Movies",
+      "url": "https://dishmt.slivcdn.com/hls/live/2011906/SonyWah/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony PIX HD",
+      "tvg_id": "1000009258",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/34_252.png",
+      "group": "Movies",
+      "url": "https://dishmt.slivcdn.com/hls/live/2011748/PIXHD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony Sports Ten 1 HD",
+      "tvg_id": "1000009276",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/21_266.png",
+      "group": "Sports",
+      "url": "https://dishmt.slivcdn.com/hls/live/2011747/TEN1HD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony Sports Ten 1",
+      "tvg_id": "1000009280",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/20_262.png",
+      "group": "Sports",
+      "url": "https://dishmt.slivcdn.com/hls/live/2011739/TEN1SD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony Sports Ten 2",
+      "tvg_id": "1000009279",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/22_261.png",
+      "group": "Sports",
+      "url": "https://dishmt.slivcdn.com/hls/live/2020590/TEN2SD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony Sports Ten 3",
+      "tvg_id": "1000009283",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/24_274.png",
+      "group": "Sports",
+      "url": "https://dishmt.slivcdn.com/hls/live/2020592/TEN3SD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony Sports Ten 4",
+      "tvg_id": "1000119187",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/38_275.png",
+      "group": "Sports",
+      "url": "https://dishmt.slivcdn.com/hls/live/2020437/ten4sd/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony Sports Ten 5",
+      "tvg_id": "1000009281",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/18_265.png",
+      "group": "Sports",
+      "url": "https://dishmt.slivcdn.com/hls/live/2020594/SONYSIXSD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony Sports Ten 2 HD",
+      "tvg_id": "1000009277",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/23_267.png",
+      "group": "Sports",
+      "url": "https://dishmt.slivcdn.com/hls/live/2020434/TEN2HD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony Sports Ten 3 HD",
+      "tvg_id": "1000009278",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/25_276.png",
+      "group": "Sports",
+      "url": "https://dishmt.slivcdn.com/hls/live/2020591/TEN3HD/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony Sports Ten 4 HD",
+      "tvg_id": "1000119186",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/39_277.png",
+      "group": "Sports",
+      "url": "https://dishmt.slivcdn.com/hls/live/2020589/ten4hd/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    },
+    {
+      "name": "Sony Sports Ten 4 HD",
+      "tvg_id": "1000009275",
+      "tvg_name": "",
+      "logo": "https://brand-websites-prod.s3.ap-south-1.amazonaws.com/sonypicturesnetworksindia/logo/39_277.png",
+      "group": "Sports",
+      "url": "https://dishmt.slivcdn.com/hls/live/2020589/ten4hd/master.m3u8?hdnea=exp=1766080099~acl=/*~id=16069973171299969027271001332732~hmac=b4533abbfd0fdb497042f921b016ae051cee8f2de3569db0902c6828db5a5076"
+    }
+  ]
+}
