@@ -6,7 +6,6 @@ from datetime import datetime
 from collections import defaultdict
 
 def fetch_m3u(url):
-    """Fetch content from URL"""
     try:
         response = requests.get(url, timeout=30)
         response.raise_for_status()
@@ -15,32 +14,18 @@ def fetch_m3u(url):
         print(f"Error fetching M3U: {e}")
         return None
 
+
 # ==============================
-# SONGHAR
+# ✅ FILTER
 # ==============================
 def is_sony_channel(channel_name):
-    name = channel_name.lower().replace(" ", "").replace("_", "")
-    sony_patterns = [
-        "sonyset",
-        "sonysab",
-        "sonypal",
-        "sonymax",
-        "sonymax1",
-        "sonymax2",
-        "sonypix",
-        "sonywah",
-        "sonyten1",
-        "sonyten2",
-        "sonyten3",
-        "sonyten4",
-        "sonyten5",
-        "sonyyay",
-        "sonyaath"
-    ]
-    return any(p in name for p in sony_patterns)
+    if not channel_name:
+        return False
+    name = channel_name.lower()
+    return "sony" in name   # SonGhar
+
 
 def detect_category(channel_name):
-    """Detect category based on channel name"""
     name_lower = channel_name.lower()
     
     if any(word in name_lower for word in ['sports', 'ten 1', 'ten 2', 'ten 3', 'ten 4', 'ten 5', 'six']):
@@ -60,8 +45,8 @@ def detect_category(channel_name):
 
     return "Entertainment"
 
+
 def parse_m3u(content):
-    """Parse content and extract channel info (API)"""
     channels = []
     lines = content.strip().split('\n')
     i = 0
@@ -71,36 +56,37 @@ def parse_m3u(content):
 
         if line.startswith('#EXTINF:'):
             channel_info = {}
+            channel_info["props"] = []
 
-            tvg_id_match = re.search(r'tvg-id="([^"]*)"', line)
-            if tvg_id_match:
-                channel_info['tvg_id'] = tvg_id_match.group(1)
-
-            tvg_name_match = re.search(r'tvg-name="([^"]*)"', line)
-            if tvg_name_match:
-                channel_info['tvg_name'] = tvg_name_match.group(1)
-
-            tvg_logo_match = re.search(r'tvg-logo="([^"]*)"', line)
-            if tvg_logo_match:
-                channel_info['tvg_logo'] = tvg_logo_match.group(1)
-
-            group_match = re.search(r'group-title="([^"]*)"', line)
-            if group_match and group_match.group(1).strip():
-                channel_info['group_title'] = group_match.group(1).strip()
-
+            tvg_id = re.search(r'tvg-id="([^"]*)"', line)
+            tvg_name = re.search(r'tvg-name="([^"]*)"', line)
+            tvg_logo = re.search(r'tvg-logo="([^"]*)"', line)
+            group = re.search(r'group-title="([^"]*)"', line)
             name_match = re.search(r',(.+)$', line)
-            if name_match:
-                channel_name = name_match.group(1).strip()
-                channel_info['name'] = channel_name
-                if 'group_title' not in channel_info:
-                    channel_info['group_title'] = detect_category(channel_name)
 
-            # ✅ STYLE
+            if tvg_id:
+                channel_info['tvg_id'] = tvg_id.group(1)
+            if tvg_name:
+                channel_info['tvg_name'] = tvg_name.group(1)
+            if tvg_logo:
+                channel_info['tvg_logo'] = tvg_logo.group(1)
+
+            if name_match:
+                name = name_match.group(1).strip()
+                channel_info['name'] = name
+                channel_info['group_title'] = (
+                    group.group(1).strip()
+                    if group and group.group(1).strip()
+                    else detect_category(name)
+                )
+
             j = i + 1
             while j < len(lines):
-                url_line = lines[j].strip()
-                if url_line and not url_line.startswith('#'):
-                    channel_info['url'] = url_line
+                l = lines[j].strip()
+                if l.startswith("#KODIPROP") or l.startswith("#EXTVLCOPT") or l.startswith("#EXTHTTP"):
+                    channel_info["props"].append(l)
+                elif l and not l.startswith("#"):
+                    channel_info['url'] = l
                     channels.append(channel_info)
                     i = j
                     break
@@ -110,8 +96,8 @@ def parse_m3u(content):
 
     return channels
 
+
 def create_m3u(channels):
-    """Create M3U playlist content with categories"""
     m3u_content = '''#EXTM3U x-tvg-url="https://www.tsepg.cf/epg.xml.gz"
 # ===============================
 #  StreamFlex™ Official Playlist
@@ -121,31 +107,30 @@ def create_m3u(channels):
 
 '''
     categories = defaultdict(list)
-    for channel in channels:
-        category = channel.get('group_title', 'Entertainment')
-        categories[category].append(channel)
+    for ch in channels:
+        categories[ch.get('group_title', 'Entertainment')].append(ch)
 
-    category_order = ['Entertainment', 'Movies', 'Sports', 'Kids', 'Regional', 'News', 'Music']
-    sorted_categories = [cat for cat in category_order if cat in categories]
-    remaining = sorted([cat for cat in categories if cat not in category_order])
-    sorted_categories.extend(remaining)
+    order = ['Entertainment', 'Movies', 'Sports', 'Kids', 'Regional', 'News', 'Music']
+    final = [c for c in order if c in categories]
+    final += sorted(c for c in categories if c not in order)
 
-    for category in sorted_categories:
-        m3u_content += f'# ========== {category} ==========\n'
-        for channel in categories[category]:
-            extinf = "#EXTINF:-1"
-            if 'tvg_id' in channel:
-                extinf += f' tvg-id="{channel["tvg_id"]}"'
-            if 'tvg_name' in channel:
-                extinf += f' tvg-name="{channel["tvg_name"]}"'
-            if 'tvg_logo' in channel:
-                extinf += f' tvg-logo="{channel["tvg_logo"]}"'
-            if 'group_title' in channel:
-                extinf += f' group-title="{channel["group_title"]}"'
-            extinf += f',{channel.get("name", "Unknown")}\n'
-            m3u_content += extinf
-            m3u_content += f'{channel.get("url", "")}\n\n'
-        m3u_content += '\n'
+    for cat in final:
+        m3u_content += f'# ========== {cat} ==========\n'
+        for ch in categories[cat]:
+            ext = "#EXTINF:-1"
+            if ch.get("tvg_id"):
+                ext += f' tvg-id="{ch["tvg_id"]}"'
+            if ch.get("tvg_name"):
+                ext += f' tvg-name="{ch["tvg_name"]}"'
+            if ch.get("tvg_logo"):
+                ext += f' tvg-logo="{ch["tvg_logo"]}"'
+            ext += f' group-title="{cat}",{ch["name"]}\n'
+            m3u_content += ext
+
+            for p in ch.get("props", []):
+                m3u_content += p + "\n"
+
+            m3u_content += ch["url"] + "\n\n"
 
     m3u_content += '''# =====================================
 # Generated by StreamFlex
@@ -154,45 +139,27 @@ def create_m3u(channels):
 '''
     return m3u_content
 
+
 def create_json(channels):
-    """Create JSON with channel info organized by categories"""
     categories = defaultdict(list)
-    for channel in channels:
-        category = channel.get('group_title', 'Entertainment')
-        categories[category].append({
-            "name": channel.get("name", "Unknown"),
-            "tvg_id": channel.get("tvg_id", ""),
-            "tvg_name": channel.get("tvg_name", ""),
-            "logo": channel.get("tvg_logo", ""),
-            "group": category,
-            "url": channel.get("url", "")
+    for ch in channels:
+        categories[ch['group_title']].append({
+            "name": ch["name"],
+            "tvg_id": ch.get("tvg_id", ""),
+            "tvg_name": ch.get("tvg_name", ""),
+            "logo": ch.get("tvg_logo", ""),
+            "group": ch["group_title"],
+            "url": ch["url"]
         })
 
-    json_data = {
+    return json.dumps({
         "StreamFlex_A_updated_at": datetime.utcnow().isoformat() + "Z",
         "StreamFlex_SL_total_channels": len(channels),
         "total_categories": len(categories),
-        "categories": {},
-        "all_channels": []
-    }
+        "categories": categories,
+        "all_channels": [c for cat in categories.values() for c in cat]
+    }, indent=2, ensure_ascii=False)
 
-    for category in sorted(categories.keys()):
-        json_data["categories"][category] = {
-            "count": len(categories[category]),
-            "channels": categories[category]
-        }
-
-    for channel in channels:
-        json_data["all_channels"].append({
-            "name": channel.get("name", "Unknown"),
-            "tvg_id": channel.get("tvg_id", ""),
-            "tvg_name": channel.get("tvg_name", ""),
-            "logo": channel.get("tvg_logo", ""),
-            "group": channel.get("group_title", "Entertainment"),
-            "url": channel.get("url", "")
-        })
-
-    return json.dumps(json_data, indent=2, ensure_ascii=False)
 
 def main():
     api_key = os.environ.get('API_KEY')
@@ -200,25 +167,20 @@ def main():
         print("ERROR: API_KEY environment variable not set!")
         return
 
-    print("Fetching playlist...")
     m3u_content = fetch_m3u(api_key)
-    if not m3u_content:
-        print("Failed to fetch M3U content")
-        return
-
     channels = parse_m3u(m3u_content)
 
-    # ✅ FILTER 
-    
+    # ✅ FINAL FILTER
     channels = [ch for ch in channels if is_sony_channel(ch.get("name", ""))]
 
-    with open('SL.m3u', 'w', encoding='utf-8') as f:
+    with open("SL.m3u", "w", encoding="utf-8") as f:
         f.write(create_m3u(channels))
 
-    with open('sl.json', 'w', encoding='utf-8') as f:
+    with open("sl.json", "w", encoding="utf-8") as f:
         f.write(create_json(channels))
 
-    print(f"✓ Successfully processed {len(channels)} Sony channels")
+    print(f"✓ Sony channels processed: {len(channels)}")
+
 
 if __name__ == "__main__":
     main()
