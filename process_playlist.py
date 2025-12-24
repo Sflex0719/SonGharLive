@@ -21,8 +21,8 @@ def fetch_m3u(url):
 def is_sony_channel(channel_name):
     if not channel_name:
         return False
-    name = channel_name.lower()
-    return "sony" in name   # SonGhar
+    name = channel_name.lower().strip()
+    return ("sony" in name) or (name == "set hd")
 
 
 def detect_category(channel_name):
@@ -83,7 +83,13 @@ def parse_m3u(content):
             j = i + 1
             while j < len(lines):
                 l = lines[j].strip()
-                if l.startswith("#KODIPROP") or l.startswith("#EXTVLCOPT") or l.startswith("#EXTHTTP"):
+
+                # ✅ USER-AGENT
+                if l.startswith("#EXTVLCOPT:http-user-agent"):
+                    channel_info["props"].append(
+                        "#EXTVLCOPT:http-user-agent=SonyLiv/7.1.3 (Linux;Android 13) StreamFlex/824.1 ExoPlayerLib/824.0"
+                    )
+                elif l.startswith("#KODIPROP") or l.startswith("#EXTHTTP"):
                     channel_info["props"].append(l)
                 elif l and not l.startswith("#"):
                     channel_info['url'] = l
