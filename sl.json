@@ -1,6 +1,6 @@
 {
-  "StreamFlex_A_updated_at": "2025-12-24T04:26:40.453825Z",
-  "StreamFlex_SL_total_channels": 26,
+  "StreamFlex_A_updated_at": "2025-12-24T04:37:44.756226Z",
+  "StreamFlex_SL_total_channels": 27,
   "total_categories": 5,
   "categories": {
     "Entertainment": [
@@ -11,6 +11,14 @@
         "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyWAH.png",
         "group": "Entertainment",
         "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/SonyWAH_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a"
+      },
+      {
+        "name": "SET HD",
+        "tvg_id": "291",
+        "tvg_name": "",
+        "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_HD.png",
+        "group": "Entertainment",
+        "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Sony_HD_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a"
       },
       {
         "name": "Sony SAB HD",
@@ -230,6 +238,14 @@
       "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyWAH.png",
       "group": "Entertainment",
       "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/SonyWAH_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a"
+    },
+    {
+      "name": "SET HD",
+      "tvg_id": "291",
+      "tvg_name": "",
+      "logo": "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_HD.png",
+      "group": "Entertainment",
+      "url": "https://jiotvpllive.cdn.jio.com/bpk-tv/Sony_HD_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a"
     },
     {
       "name": "Sony SAB HD",
