@@ -5,6 +5,71 @@
 #  Join: https://t.me/streamflex19
 # ===============================
 
+# ========== Entertainment ==========
+#EXTINF:-1 tvg-id="1393" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyWAH.png" group-title="Entertainment",Sony Wah
+https://jiotvpllive.cdn.jio.com/bpk-tv/SonyWAH_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+#EXTINF:-1 tvg-id="471" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/SonySAB.png" group-title="Entertainment",Sony SAB HD
+https://jiotvpllive.cdn.jio.com/bpk-tv/SonySAB_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+#EXTINF:-1 tvg-id="474" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyPAL.png" group-title="Entertainment",Sony Pal
+https://jiotvpllive.cdn.jio.com/bpk-tv/SonyPAL_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+#EXTINF:-1 tvg-id="697" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyAATH.png" group-title="Entertainment",Sony aath
+https://jiotvpllive.cdn.jio.com/bpk-tv/SonyAATH_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+
+# ========== Movies ==========
+#EXTINF:-1 tvg-id="3418" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyMAX1.png" group-title="Movies",Sony MAX1
+https://jiotvpllive.cdn.jio.com/bpk-tv/SonyMAX1_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+#EXTINF:-1 tvg-id="476" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyMAX.png" group-title="Movies",Sony Max HD
+https://jiotvpllive.cdn.jio.com/bpk-tv/SonyMAX_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+#EXTINF:-1 tvg-id="483" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyMAX2.png" group-title="Movies",Sony MAX2
+https://jiotvpllive.cdn.jio.com/bpk-tv/SonyMAX2_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+#EXTINF:-1 tvg-id="762" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyPIX.png" group-title="Movies",Sony Pix HD
+https://jiotvpllive.cdn.jio.com/bpk-tv/SonyPIX_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+
+# ========== Sports ==========
+#EXTINF:-1 tvg-id="155" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Six_HD.png" group-title="Sports",Sony Ten 5 HD
+https://jiotvpllive.cdn.jio.com/bpk-tv/Six_HD_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+#EXTINF:-1 tvg-id="162" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_HD.png" group-title="Sports",Sony Ten 1 HD
+https://jiotvpllive.cdn.jio.com/bpk-tv/Ten_HD_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+#EXTINF:-1 tvg-id="1772" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_4_HD_Tamil.png" group-title="Sports",Sony Ten 4 HD Tamil
+https://jiotvpllive.cdn.jio.com/bpk-tv/Ten_4_HD_Tamil_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+#EXTINF:-1 tvg-id="1773" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_4_HD_Telugu.png" group-title="Sports",Sony Ten 4 HD Telugu
+https://jiotvpllive.cdn.jio.com/bpk-tv/Ten_4_HD_Telugu_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+#EXTINF:-1 tvg-id="1774" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_4_Tamil.png" group-title="Sports",Sony Ten 4 Tamil
+https://jiotvpllive.cdn.jio.com/bpk-tv/Ten_4_Tamil_MOB/WDVLive/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+#EXTINF:-1 tvg-id="1775" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_4_Telugu.png" group-title="Sports",Sony Ten 4 Telugu
+https://jiotvpllive.cdn.jio.com/bpk-tv/Ten_4_Telugu_MOB/WDVLive/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+#EXTINF:-1 tvg-id="514" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_1.png" group-title="Sports",Sony Ten 1
+https://jiotvpllive.cdn.jio.com/bpk-tv/Ten_1_MOB/WDVLive/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+#EXTINF:-1 tvg-id="524" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ten_3.png" group-title="Sports",Sony Ten 3 Hindi
+https://jiotvpllive.cdn.jio.com/bpk-tv/Ten_3_MOB/WDVLive/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+#EXTINF:-1 tvg-id="525" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Six_SD.png" group-title="Sports",Sony Ten 5
+https://jiotvpllive.cdn.jio.com/bpk-tv/Sony_Six_SD_MOB/WDVLive/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+#EXTINF:-1 tvg-id="891" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/Ten2_HD.png" group-title="Sports",Sony Ten 2 HD
+https://jiotvpllive.cdn.jio.com/bpk-tv/Ten2_HD_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+
+# ========== Kids ==========
+#EXTINF:-1 tvg-id="872" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/SonyYAYHin.png" group-title="Kids",Sony Yay Hindi
+https://jiotvpllive.cdn.jio.com/bpk-tv/SonyYAYHin_BTS/output/index.mpd?__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a&xxx=%7Ccookie=__hdnea__=st=1766538669~exp=1766625069~acl=/*~hmac=0dce58cb9685cdc2c031e8124e22a7a017369faa631ab40119bafee0c787ca3a
+
+
 # =====================================
 # Generated by StreamFlex
 # Thank you
