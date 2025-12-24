@@ -15,17 +15,29 @@ def fetch_m3u(url):
         print(f"Error fetching M3U: {e}")
         return None
 
-# ✅ ONLY ADDITION
+# ==============================
+# SONGHAR
+# ==============================
 def is_sony_channel(channel_name):
-    name_lower = channel_name.lower()
-    sony_keywords = [
-        "sony", "set", "sab", "pal", "aath",
-        "pix", "wah",
-        "max", "max 1", "max 2",
-        "ten 1", "ten 2", "ten 3", "ten 4", "ten 5",
-        "sony yay"
+    name = channel_name.lower().replace(" ", "").replace("_", "")
+    sony_patterns = [
+        "sonyset",
+        "sonysab",
+        "sonypal",
+        "sonymax",
+        "sonymax1",
+        "sonymax2",
+        "sonypix",
+        "sonywah",
+        "sonyten1",
+        "sonyten2",
+        "sonyten3",
+        "sonyten4",
+        "sonyten5",
+        "sonyyay",
+        "sonyaath"
     ]
-    return any(word in name_lower for word in sony_keywords)
+    return any(p in name for p in sony_patterns)
 
 def detect_category(channel_name):
     """Detect category based on channel name"""
@@ -49,12 +61,14 @@ def detect_category(channel_name):
     return "Entertainment"
 
 def parse_m3u(content):
+    """Parse content and extract channel info (API)"""
     channels = []
     lines = content.strip().split('\n')
     i = 0
 
     while i < len(lines):
         line = lines[i].strip()
+
         if line.startswith('#EXTINF:'):
             channel_info = {}
 
@@ -81,17 +95,23 @@ def parse_m3u(content):
                 if 'group_title' not in channel_info:
                     channel_info['group_title'] = detect_category(channel_name)
 
-            if i + 1 < len(lines):
-                url_line = lines[i + 1].strip()
+            # ✅ STYLE
+            j = i + 1
+            while j < len(lines):
+                url_line = lines[j].strip()
                 if url_line and not url_line.startswith('#'):
                     channel_info['url'] = url_line
                     channels.append(channel_info)
-                    i += 1
+                    i = j
+                    break
+                j += 1
+
         i += 1
 
     return channels
 
 def create_m3u(channels):
+    """Create M3U playlist content with categories"""
     m3u_content = '''#EXTM3U x-tvg-url="https://www.tsepg.cf/epg.xml.gz"
 # ===============================
 #  StreamFlex™ Official Playlist
@@ -135,6 +155,7 @@ def create_m3u(channels):
     return m3u_content
 
 def create_json(channels):
+    """Create JSON with channel info organized by categories"""
     categories = defaultdict(list)
     for channel in channels:
         category = channel.get('group_title', 'Entertainment')
@@ -187,7 +208,8 @@ def main():
 
     channels = parse_m3u(m3u_content)
 
-    # ✅ ONLY FILTER — NOTHING ELSE
+    # ✅ FILTER 
+    
     channels = [ch for ch in channels if is_sony_channel(ch.get("name", ""))]
 
     with open('SL.m3u', 'w', encoding='utf-8') as f:
