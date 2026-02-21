@@ -84,7 +84,6 @@ def parse_m3u(content):
             while j < len(lines):
                 l = lines[j].strip()
 
-                # ✅ USER-AGENT
                 if l.startswith("#EXTVLCOPT:http-user-agent"):
                     channel_info["props"].append(
                         "#EXTVLCOPT:http-user-agent=SonyLiv/7.1.3 (Linux;Android 13) StreamFlex/824.1 ExoPlayerLib/824.0"
@@ -167,6 +166,46 @@ def create_json(channels):
     }, indent=2, ensure_ascii=False)
 
 
+# ==============================
+# 🔥 StreamFlex SLiv
+# ==============================
+
+def add_sony_sab_servers(channels):
+    servers = os.environ.get("SONY_SAB_SERVERS", "")
+    logo = "https://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SAB.png"
+
+    for idx, url in enumerate(servers.splitlines(), start=1):
+        url = url.strip()
+        if url:
+            channels.append({
+                "name": f"Sony Sab Server {idx}",
+                "tvg_id": "sony.sab",
+                "tvg_name": f"Sony Sab Server {idx}",
+                "tvg_logo": logo,
+                "group_title": "Entertainment",
+                "url": url,
+                "props": []
+            })
+
+
+def add_sony_sports_from_secret(channels):
+    source = os.environ.get("SONY_SPORTS_SOURCE")
+    if not source:
+        return
+
+    content = fetch_m3u(source)
+    if not content:
+        return
+
+    parsed = parse_m3u(content)
+
+    for ch in parsed:
+        name = ch.get("name", "").lower()
+        if "sony sports" in name:
+            ch["group_title"] = "Sports"
+            channels.append(ch)
+
+
 def main():
     api_key = os.environ.get('API_KEY')
     if not api_key:
@@ -179,6 +218,10 @@ def main():
     # ✅ FINAL FILTER
     channels = [ch for ch in channels if is_sony_channel(ch.get("name", ""))]
 
+    
+    add_sony_sab_servers(channels)
+    add_sony_sports_from_secret(channels)
+
     with open("SL.m3u", "w", encoding="utf-8") as f:
         f.write(create_m3u(channels))
 
@@ -189,4 +232,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main()        
